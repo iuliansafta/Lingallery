@@ -10,6 +10,10 @@ export default {
         const PictureElement = require('./PictureElement').default
         Vue.component('PictureElement', PictureElement)
       }
+      if (this.addons.enableGalleryLargeView) {
+        const GalleryLargeView = require('./GalleryLargeView').default
+        Vue.component('GalleryLargeView', GalleryLargeView)
+      }
     }
   }
 }
